@@ -1,0 +1,138 @@
+import Section from './Section'
+
+const workExperience = [
+  {
+    company: 'Company Name',
+    role: 'Software Engineering Intern',
+    period: 'May 2024 – Aug 2024',
+    location: 'City, State',
+    bullets: [
+      'Describe what you built or contributed to — be specific and quantify impact where possible.',
+      'Another accomplishment, technology used, or problem solved during this role.',
+      'A third bullet if relevant — keep it concise and impactful.',
+    ],
+    tags: ['Python', 'AWS', 'React'],
+  },
+  {
+    company: 'Research Lab / Another Company',
+    role: 'Research Assistant',
+    period: 'Jan 2024 – May 2024',
+    location: 'University',
+    bullets: [
+      'Describe your research contribution or project work here.',
+      'Mention any publications, presentations, or results from your work.',
+    ],
+    tags: ['Machine Learning', 'PyTorch', 'Data Analysis'],
+  },
+]
+
+export default function Work() {
+  return (
+    <Section id="work" label="02" title="Work Experience">
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+        {workExperience.map((job, i) => (
+          <WorkItem key={i} job={job} />
+        ))}
+      </div>
+    </Section>
+  )
+}
+
+function WorkItem({ job }) {
+  return (
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: '180px 1fr',
+      gap: '24px 40px',
+    }}>
+      {/* Left: metadata */}
+      <div>
+        <p style={{
+          fontFamily: 'var(--font-mono)',
+          fontSize: '11px',
+          color: 'var(--text-muted)',
+          lineHeight: 1.8,
+        }}>
+          {job.period}
+        </p>
+        <p style={{
+          fontFamily: 'var(--font-mono)',
+          fontSize: '11px',
+          color: 'var(--text-muted)',
+        }}>
+          {job.location}
+        </p>
+      </div>
+
+      {/* Right: content */}
+      <div>
+        <h3 style={{
+          fontFamily: 'var(--font-display)',
+          fontSize: '22px',
+          fontWeight: 400,
+          color: 'var(--text-primary)',
+          marginBottom: '2px',
+        }}>
+          {job.role}
+        </h3>
+        <p style={{
+          fontFamily: 'var(--font-mono)',
+          fontSize: '13px',
+          color: 'var(--accent)',
+          marginBottom: '16px',
+        }}>
+          {job.company}
+        </p>
+
+        <ul style={{
+          listStyle: 'none',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '8px',
+          marginBottom: '16px',
+        }}>
+          {job.bullets.map((b, i) => (
+            <li key={i} style={{
+              fontSize: '14px',
+              color: 'var(--text-secondary)',
+              lineHeight: 1.65,
+              paddingLeft: '16px',
+              position: 'relative',
+            }}>
+              <span style={{
+                position: 'absolute', left: 0, top: '0.55em',
+                width: '5px', height: '1px',
+                background: 'var(--text-muted)',
+                display: 'block',
+              }} />
+              {b}
+            </li>
+          ))}
+        </ul>
+
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+          {job.tags.map(tag => (
+            <span key={tag} style={{
+              fontFamily: 'var(--font-mono)',
+              fontSize: '11px',
+              color: 'var(--accent)',
+              background: 'var(--accent-light)',
+              padding: '3px 10px',
+              borderRadius: '2px',
+            }}>
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <style>{`
+        @media (max-width: 600px) {
+          div[style*="grid-template-columns: 180px"] {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
+    </div>
+  )
+}
