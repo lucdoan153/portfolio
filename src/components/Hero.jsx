@@ -29,7 +29,7 @@ export default function Hero() {
           marginBottom: '28px',
           animationDelay: '0.2s',
         }}>
-          Your<br />Name.
+          Luc<br />Doan.
         </h1>
 
         <p className="fade-up" style={{
@@ -42,7 +42,7 @@ export default function Hero() {
           fontWeight: 300,
         }}>
           I build software and enjoy solving complex problems. 
-          Currently studying CS at <strong style={{ color: 'var(--text-primary)', fontWeight: 500 }}>Your University</strong>, 
+          Currently studying CS at <strong style={{ color: 'var(--text-primary)', fontWeight: 500 }}>Louisiana State University</strong>, 
           interested in <strong style={{ color: 'var(--text-primary)', fontWeight: 500 }}>full-stack development</strong> and <strong style={{ color: 'var(--text-primary)', fontWeight: 500 }}>systems programming</strong>.
         </p>
 
@@ -64,7 +64,7 @@ export default function Hero() {
           >
             View Projects
           </a>
-          <a href="mailto:you@email.com" style={{
+          <a href="mailto:lucdoan153@gmail.com" style={{
             padding: '12px 24px',
             background: 'transparent',
             color: 'var(--text-primary)',
