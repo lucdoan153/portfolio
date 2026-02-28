@@ -41,9 +41,9 @@ export default function Hero() {
           animationDelay: '0.35s',
           fontWeight: 300,
         }}>
-          I build software and enjoy solving complex problems. 
+          I love turning ideas into polished, functional products and am always looking for new problems worth solving. 
           Currently studying CS at <strong style={{ color: 'var(--text-primary)', fontWeight: 500 }}>Louisiana State University</strong>, 
-          interested in <strong style={{ color: 'var(--text-primary)', fontWeight: 500 }}>full-stack development</strong> and <strong style={{ color: 'var(--text-primary)', fontWeight: 500 }}>systems programming</strong>.
+          interested in <strong style={{ color: 'var(--text-primary)', fontWeight: 500 }}>App Development</strong>, <strong style={{ color: 'var(--text-primary)', fontWeight: 500 }}>UX/Product Design</strong> and <strong style={{ color: 'var(--text-primary)', fontWeight: 500 }}>Technical Marketing</strong>.
         </p>
 
         <div className="fade-up" style={{
@@ -80,7 +80,7 @@ export default function Hero() {
             Contact Me
           </a>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/luc-doan-bb7a27243"
             target="_blank"
             rel="noopener noreferrer"
             style={{

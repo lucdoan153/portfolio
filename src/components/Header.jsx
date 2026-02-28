@@ -4,6 +4,7 @@ const navLinks = [
   { label: 'Projects', href: '#projects' },
   { label: 'Work', href: '#work' },
   { label: 'Education', href: '#education' },
+  { label: 'Skills', href: '#skills' },
 ]
 
 export default function Header() {

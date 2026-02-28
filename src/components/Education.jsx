@@ -2,13 +2,23 @@ import Section from './Section'
 
 const education = [
   {
-    school: 'Your University',
-    degree: 'B.S. Computer Science',
-    period: 'Aug 2022 – May 2026',
-    gpa: '3.8 / 4.0',
+    school: 'Louisiana State University',
+    logo: '/portfolio/logos/louisiana_state_university_logo.jpg',
+    degree: 'Pursuing a B.S. Computer Science | Software Engineering',
+    period: 'Aug 2023 – Present',
+    gpa: null,
     details: [
-      'Relevant Coursework: Data Structures, Algorithms, Operating Systems, Databases, Computer Networks',
-      'Dean\'s List: Fall 2022, Spring 2023, Fall 2023',
+      'Relevant Coursework: Data Structures, Algorithms, Operating Systems, Databases, Data Structures, Software Systems, Computer Organization & Design',
+    ],
+  },
+  {
+    school: 'Strake Jesuit College Preparatory',
+    logo: '/portfolio/logos/strake_jesuit_college_preparatory_logo.jpg',
+    degree: 'High School Diploma',
+    period: 'Aug 2019 – May 2023',
+    gpa: null,
+    details: [
+      'Proud Alumni of Strake Jesuit, where I developed a strong foundation in critical thinking and leadership.',
     ],
   },
 ]
@@ -32,7 +42,7 @@ function EducationItem({ edu }) {
       gridTemplateColumns: '180px 1fr',
       gap: '24px 40px',
     }}>
-      <div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '8px' }}>
         <p style={{
           fontFamily: 'var(--font-mono)',
           fontSize: '11px',
@@ -50,6 +60,22 @@ function EducationItem({ edu }) {
             GPA: {edu.gpa}
           </p>
         )}
+        <img
+          src={edu.logo}
+          alt={edu.school}
+          style={{
+            width: '120px',
+            height: '120px',
+            objectFit: 'contain',
+            marginTop: '8px',
+            marginLeft: '8px',
+            borderRadius: '8px',
+            border: '1px solid var(--border)',
+            padding: '8px',
+            background: '#fff',
+            display: 'block',
+          }}
+        />
       </div>
 
       <div>

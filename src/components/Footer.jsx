@@ -1,4 +1,4 @@
-const LAST_UPDATED = 'February 2025'
+const LAST_UPDATED = 'February 2026'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -23,7 +23,7 @@ export default function Footer() {
           color: 'var(--text-muted)',
           letterSpacing: '0.04em',
         }}>
-          © {year} Your Name
+          © {year} Luc Doan
         </p>
 
         <p style={{
@@ -37,9 +37,9 @@ export default function Footer() {
 
         <div style={{ display: 'flex', gap: '20px' }}>
           {[
-            { label: 'GitHub', href: 'https://github.com/yourusername' },
-            { label: 'LinkedIn', href: 'https://linkedin.com/in/yourprofile' },
-            { label: 'Email', href: 'mailto:you@email.com' },
+            { label: 'GitHub', href: 'https://github.com/lucdoan153' },
+            { label: 'LinkedIn', href: 'https://linkedin.com/in/luc-doan-bb7a27243' },
+            { label: 'Email', href: 'mailto:lucdoan153@gmail.com' },
           ].map(link => (
             <a key={link.label} href={link.href}
               target={link.label !== 'Email' ? '_blank' : undefined}
