@@ -2,27 +2,17 @@ import Section from './Section'
 
 const workExperience = [
   {
-    company: 'Company Name',
-    role: 'Software Engineering Intern',
-    period: 'May 2024 – Aug 2024',
-    location: 'City, State',
+    company: 'Studio RED Architects',
+    logo: '/portfolio/logos/studio_red_architects_logo.jpg',
+    role: 'IT Administrator Intern',
+    period: 'June 2022 – Aug 2024',
+    location: 'Houston, Texas',
     bullets: [
-      'Describe what you built or contributed to — be specific and quantify impact where possible.',
-      'Another accomplishment, technology used, or problem solved during this role.',
-      'A third bullet if relevant — keep it concise and impactful.',
+      'I created multiple PowerShell scripts to automate routine IT tasks, which reduced manual work and improved efficiency across the company.',
+      'Through this intership, I gained hands-on experience with various IT systems and tools, including VMware for virtualization, Group Policy Management for network administration, and Linux for server management.',
+      'This internship not only enhanced my technical skills but also deepened my understanding of IT infrastructure and its critical role in supporting business operations.',
     ],
-    tags: ['Python', 'AWS', 'React'],
-  },
-  {
-    company: 'Research Lab / Another Company',
-    role: 'Research Assistant',
-    period: 'Jan 2024 – May 2024',
-    location: 'University',
-    bullets: [
-      'Describe your research contribution or project work here.',
-      'Mention any publications, presentations, or results from your work.',
-    ],
-    tags: ['Machine Learning', 'PyTorch', 'Data Analysis'],
+    tags: ['Linux', 'Powershell', 'VMware', 'Group Policy Management'],
   },
 ]
 
@@ -46,7 +36,7 @@ function WorkItem({ job }) {
       gap: '24px 40px',
     }}>
       {/* Left: metadata */}
-      <div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '8px' }}>
         <p style={{
           fontFamily: 'var(--font-mono)',
           fontSize: '11px',
@@ -62,6 +52,22 @@ function WorkItem({ job }) {
         }}>
           {job.location}
         </p>
+        <img
+        src={job.logo}
+        alt={job.company}
+        style={{
+          width: '120px',
+          height: '120px',
+          objectFit: 'contain',
+          marginTop: '8px',
+          marginLeft: '8px',
+          borderRadius: '8px',
+          border: '1px solid var(--border)',
+          padding: '8px',
+          background: '#fff',
+          display: 'block',
+        }}
+      />
       </div>
 
       {/* Right: content */}

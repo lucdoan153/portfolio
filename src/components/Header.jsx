@@ -4,6 +4,7 @@ const navLinks = [
   { label: 'Projects', href: '#projects' },
   { label: 'Work', href: '#work' },
   { label: 'Education', href: '#education' },
+  { label: 'Skills', href: '#skills' },
 ]
 
 export default function Header() {
@@ -44,7 +45,7 @@ export default function Header() {
           color: 'var(--text-primary)',
           letterSpacing: '0.02em',
         }}>
-          your.name
+          Luc.Doan
         </a>
 
         {/* Desktop Nav */}
@@ -64,7 +65,7 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/lucdoan153"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -132,7 +133,7 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"
+          <a href="https://github.com/lucdoan153" target="_blank" rel="noopener noreferrer"
             style={{ fontSize: '14px', fontFamily: 'var(--font-mono)', color: 'var(--accent)' }}>
             GitHub ↗
           </a>
