@@ -8,9 +8,9 @@ const workExperience = [
     period: 'June 2022 – Aug 2024',
     location: 'Houston, Texas',
     bullets: [
-      'Describe what you built or contributed to — be specific and quantify impact where possible.',
-      'Another accomplishment, technology used, or problem solved during this role.',
-      'A third bullet if relevant — keep it concise and impactful.',
+      'I created multiple PowerShell scripts to automate routine IT tasks, which reduced manual work and improved efficiency across the company.',
+      'Through this intership, I gained hands-on experience with various IT systems and tools, including VMware for virtualization, Group Policy Management for network administration, and Linux for server management.',
+      'This internship not only enhanced my technical skills but also deepened my understanding of IT infrastructure and its critical role in supporting business operations.',
     ],
     tags: ['Linux', 'Powershell', 'VMware', 'Group Policy Management'],
   },

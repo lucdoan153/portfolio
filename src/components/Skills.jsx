@@ -1,10 +1,9 @@
 import Section from './Section'
 
 const skills = {
-  Languages: ['JavaScript', 'Python', 'C++', 'Dart'],
+  Languages: ['JavaScript', 'Python', 'C++', 'Linux', 'Powershell','HTML', 'Ocaml', 'Ruby'],
   Frameworks: ['React', 'Flutter', 'React Native'],
   Tools: ['Git', 'Firebase', 'VS Code', 'Figma'],
-  Concepts: ['Machine Learning', 'REST APIs', 'Agile'],
 }
 
 export default function Skills() {

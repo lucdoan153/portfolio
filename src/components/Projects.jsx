@@ -12,7 +12,7 @@ const projects = [
   {
     name: 'FocusFeed',
     description: 'FocusFeed replaces mindless scrolling with purposeful studying. Delivers flashcards, quizzes, and AI-generated content through a familiar swipe-based feed — making studying feel as natural as opening TikTok. Built with Flutter and Firebase, it’s designed to help students stay focused and make the most of their study time.',
-    tags: ['Flutter', 'Firebase', 'React Native'],
+    tags: ['Flutter', 'Firebase', 'React'],
     github: null,
     demo: null,
     year: 'present',
